@@ -53,7 +53,7 @@ def insert():
 def select():
     conn = psycopg2.connect('postgresql://postgresql_lab10_zj3u_user:fxTXSGOWrx9udgkmfKkmKv58JSQbtMl2@dpg-cvgu7ftumphs73cvu9eg-a/postgresql_lab10_zj3u')
     cur = conn.cursor()
-    cur.exectue('''
+    cur.execute('''
         SELECT * FROM Basketball;
     ''')
     records = cur.fetchall()
